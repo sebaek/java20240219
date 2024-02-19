@@ -8,3 +8,4 @@ public class Main3 {
 
     }
 }
+// 집에서 한 일이 있다면
