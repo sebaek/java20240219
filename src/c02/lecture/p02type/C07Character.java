@@ -59,9 +59,9 @@ public class C07Character {
         System.out.println("emojit = " + emojit);
 
         char q = '힣';
-        char r = '😂';
+//        char r = '😂';
 
         System.out.println("q = " + q);
-        System.out.println("r = " + r);
+//        System.out.println("r = " + r);
     }
 }
