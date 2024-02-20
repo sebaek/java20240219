@@ -53,6 +53,15 @@ public class C07Character {
         System.out.println("emojis = " + emojis);
 
         // 1f3a4 : 마이크 모양 이모지 출력
-        
+        int p = 0x1f3a4;
+        char[] emoji2 = Character.toChars(p);
+        String emojit = new String(emoji2);
+        System.out.println("emojit = " + emojit);
+
+        char q = '힣';
+        char r = '😂';
+
+        System.out.println("q = " + q);
+        System.out.println("r = " + r);
     }
 }
