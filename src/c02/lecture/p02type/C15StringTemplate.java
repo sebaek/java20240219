@@ -26,7 +26,8 @@ public class C15StringTemplate {
         String country = "한국";
 
         // 저는 한국에 있는 서울에 삽니다.
-        String desc4;
+        String desc4 = STR."저는 \{country}에 있는 \{address}에 삽니다.";
+        System.out.println(desc4);
 
 
     }
