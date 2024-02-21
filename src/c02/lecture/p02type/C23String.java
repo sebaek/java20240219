@@ -26,9 +26,22 @@ public class C23String {
 
         // String -> 기본타입 파싱 실패
         String i = "가나다";
-        int j = Integer.parseInt(i);
+//        int j = Integer.parseInt(i); // Exception 발생 (11장에서 설명됨)
 
         // 2. 기본타입 -> String 변환
+        int k = 356;
+        double l = 3.14;
 
+        String m = String.valueOf(k);
+        String n = String.valueOf(l);
+
+        System.out.println("m = " + m);
+        System.out.println("n = " + n);
+
+        String o = k + ""; // String과 다른 타입간 더하기(+) 연산의 결과는 String임
+        String p = l + "";
+
+        System.out.println("o = " + o);
+        System.out.println("p = " + p);
     }
 }
