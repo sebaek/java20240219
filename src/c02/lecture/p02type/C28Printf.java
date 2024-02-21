@@ -43,5 +43,33 @@ public class C28Printf {
         System.out.println();
 
 
+        // 수형식 (정수)
+        System.out.printf("%d", 345);
+        System.out.println();
+        System.out.printf("%5d", 345);
+        System.out.println();
+        System.out.printf("%-5d", 345);
+        System.out.println();
+        System.out.printf("%05d", 345);
+        System.out.println();
+
+        System.out.printf("%f", 3.141592);
+        System.out.println();
+        System.out.printf("%10f", 3.141592);
+        System.out.println();
+        System.out.printf("%-10f", 3.141592);
+        System.out.println();
+        System.out.printf("%010f", 3.141592);
+        System.out.println();
+        System.out.printf("%010.4f", 3.141592);
+        System.out.println();
+
+        System.out.printf("%%");
+        System.out.println();
+
+        System.out.printf("%n");
+        System.out.println();
+
+        
     }
 }
