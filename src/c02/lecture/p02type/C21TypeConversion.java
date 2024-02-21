@@ -29,5 +29,12 @@ public class C21TypeConversion {
         System.out.println("g = " + g);
         System.out.println("h = " + h);
 
+        // 강제타입변환 : 실수형 -> 정수형
+        double i = 3.14;
+        int j = (int) i; // 소숫점 이하 탈락
+
+        System.out.println("i = " + i);
+        System.out.println("j = " + j);
+
     }
 }
