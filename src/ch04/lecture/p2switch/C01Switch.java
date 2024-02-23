@@ -22,10 +22,15 @@ public class C01Switch {
             case "부산":
                 System.out.println("statement 4");
                 break;
+
+            // 위의 모든 case에 해당되지 않을 때
+            default:
+                System.out.println("statement 5");
+                break;
+
         }
 
 
-        System.out.println("statement 5");
         System.out.println("statement 6");
         System.out.println("statement 7");
         System.out.println("statement 8");
