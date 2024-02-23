@@ -16,21 +16,22 @@ public class C04RPS {
         int computer = random.nextInt(1, 4);
 
         // switch 문으로 바꾸기
-        if (user == 1) {
-            System.out.println("user = 가위 ✌️");
-        } else if (user == 2) {
-            System.out.println("user = 바위 ✊");
-        } else if (user == 3) {
-            System.out.println("user = 보 ✋");
+        switch (user) {
+            case 1 -> System.out.println("user = 가위 ✌️");
+            case 2 -> System.out.println("user = 바위 ✊");
+            case 3 -> System.out.println("user = 보 ✋");
         }
 
 
-        if (computer == 1) {
-            System.out.println("computer = 가위 ✌️");
-        } else if (computer == 2) {
-            System.out.println("computer = 바위 ✊");
-        } else if (computer == 3) {
-            System.out.println("computer = 보 ✋");
+        switch (computer) {
+            case 1:
+                System.out.println("computer = 가위 ✌️");
+                break;
+            case 2:
+                System.out.println("computer = 바위 ✊");
+                break;
+            case 3:
+                System.out.println("computer = 보 ✋");
         }
 
         // 누가 이겼는지? 또는 비겼는지 메세지 출력
