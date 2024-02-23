@@ -17,9 +17,9 @@ public class C06RPS {
 
         // 여러분들이 코드 작성
         System.out.println("user = " + user); // 가위, 바위, 보
-        System.out.println("computer = " + computer); // 가위, 바위,
+        System.out.println("computer = " + computer); // 가위, 바위, 보
 
         // 누가 이겼는지? 또는 비겼는지 메세지 출력
-        
+
     }
 }
