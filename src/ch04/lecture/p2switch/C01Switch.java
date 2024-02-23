@@ -5,7 +5,7 @@ public class C01Switch {
 
         System.out.println("statement 1");
 
-        String city = "제주";
+        String city = "부산";
 
         switch (city) {
             // 값이 "서울"
@@ -21,6 +21,7 @@ public class C01Switch {
             // 값이 "부산"
             case "부산":
                 System.out.println("statement 4");
+                System.out.println("statement 4 - 1");
                 break;
 
             // 위의 모든 case에 해당되지 않을 때
