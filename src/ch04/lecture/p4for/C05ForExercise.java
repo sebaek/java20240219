@@ -106,6 +106,13 @@ public class C05ForExercise {
         01234
 
          */
+        System.out.println("----------------------");
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j <= i; j++) {
+                System.out.print(j);
+            }
+            System.out.println();
+        }
 
         /*
 
@@ -116,6 +123,13 @@ public class C05ForExercise {
         12345
 
          */
+        System.out.println("----------------------");
+        for (int i = 1; i < 6; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(j);
+            }
+            System.out.println();
+        }
 
         /*
 
@@ -126,6 +140,14 @@ public class C05ForExercise {
         01234
 
          */
+        System.out.println("------------------");
+        int k = 0;
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j <= i; j++, k++) {
+                System.out.print(k % 10);
+            }
+            System.out.println();
+        }
 
         /*
 
@@ -136,5 +158,13 @@ public class C05ForExercise {
         12345
 
          */
+        System.out.println("------------------");
+        k = 1;
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j <= i; j++, k++) {
+                System.out.print(k % 10);
+            }
+            System.out.println();
+        }
     }
 }
