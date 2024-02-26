@@ -31,6 +31,9 @@ public class C04ForExercise {
         6
         8
          */
+        for (int i = 0; i <= 8; i += 2) {
+            System.out.println(i);
+        }
         /*
         2
         4
@@ -38,7 +41,9 @@ public class C04ForExercise {
         8
         10
          */
-
+        for (int i = 2; i <= 10; i += 2) {
+            System.out.println(i);
+        }
         /*
         4
         3
@@ -46,6 +51,9 @@ public class C04ForExercise {
         1
         0
          */
+        for (int i = 4; i >= 0; i--) {
+            System.out.println(i);
+        }
 
         /*
         5
@@ -54,7 +62,9 @@ public class C04ForExercise {
         2
         1
          */
-
+        for (int i = 5; i > 0; i--) {
+            System.out.println(i);
+        }
 
     }
 }
