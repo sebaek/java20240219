@@ -1,5 +1,7 @@
 package ch05.sec07;
 
+import java.util.Arrays;
+
 public class MultidimensionalArrayByNewExample {
     public static void main(String[] args) {
         int[][] mathScores = new int[2][3];
@@ -38,6 +40,39 @@ public class MultidimensionalArrayByNewExample {
         double totalMathAvg = (double) totalMathSum / totalStudent;
 
         System.out.println("전체 학생의 수학 평균 점수 = " + totalMathAvg);
+
+
+        int[][] englishScores = new int[2][];
+//        System.out.println(Arrays.toString(englishScores));
+
+        englishScores[0] = new int[2]; // [0, 0]
+        englishScores[1] = new int[3]; // [0, 0, 0]
+
+        for (int i = 0; i < englishScores.length; i++) {
+            for (int j = 0; j < englishScores[i].length; j++) {
+                System.out.println("englishScores[" + i + "][" + j + "]: " + englishScores[i][j]);
+            }
+        }
+
+        englishScores[0][0] = 90;
+        englishScores[0][1] = 91;
+        englishScores[1][0] = 92;
+        englishScores[1][1] = 93;
+        englishScores[1][2] = 94;
+
+        totalStudent = 0;
+        int totalEnglishSum = 0;
+
+        for (int[] englishClass : englishScores) {
+            totalStudent += englishClass.length;
+            for (int score : englishClass) {
+                totalEnglishSum += score;
+            }
+        }
+
+        double totalEnglishAvg = (double) totalEnglishSum / totalStudent;
+        System.out.println("전체 학생의 영어 평균 점수 = " + totalEnglishAvg);
+
     }
 
 }
