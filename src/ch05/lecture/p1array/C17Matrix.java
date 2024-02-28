@@ -13,7 +13,8 @@ public class C17Matrix {
         System.out.println(mat1[2].length); // 2
 
         mat1[1][0] = 5; // 2번째행 1번째열의 값을 5
-
+        mat1[2][1] = 9; // 3번째행 2번째열의 값을 9
+        mat1[1][1] = 7;
         // 전체 탐색은 중첩된 for 사용
         for (int i = 0; i < mat1.length; i++) {
             System.out.print("[");
