@@ -13,5 +13,19 @@ public class C13Reference {
         System.out.println(Arrays.toString(arr1));
         System.out.println(Arrays.toString(arr2)); // [10, 4]
 
+        System.out.println(System.identityHashCode(arr1));
+        System.out.println(System.identityHashCode(arr2));
+
+        int[] arr3 = {2, 3};
+        int[] arr4 = Arrays.copyOf(arr3, 2);
+
+        System.out.println(System.identityHashCode(arr3));
+        System.out.println(System.identityHashCode(arr4));
+
+        arr3[0] = 22;
+
+        System.out.println(Arrays.toString(arr3));
+        System.out.println(Arrays.toString(arr4));
+
     }
 }
