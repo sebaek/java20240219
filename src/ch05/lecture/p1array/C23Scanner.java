@@ -2,7 +2,7 @@ package ch05.lecture.p1array;
 
 import java.util.Scanner;
 
-public class S23Scanner {
+public class C23Scanner {
     public static void main(String[] args) {
         String s = "my age is 33 or 44";
         Scanner scanner = new Scanner(s);
@@ -18,7 +18,7 @@ public class S23Scanner {
 //        System.out.println(number); // 44
 
         int number = scanner.nextInt();
-        System.out.println(number);
+        System.out.println(number); // 44
 
     }
 }
