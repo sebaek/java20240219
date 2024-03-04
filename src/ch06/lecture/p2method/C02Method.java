@@ -20,6 +20,9 @@ class C02Car {
     // lowerCamelCase
     // 동사로 시작
 
+    // 파라미터 (parameter - 매개변수, argument - 매개값, 인자값, 인수)
+    // 메소드 호출시 받는 값들 정의
+
     void run() {
     }
 
