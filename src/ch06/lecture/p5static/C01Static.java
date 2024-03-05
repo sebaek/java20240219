@@ -16,6 +16,10 @@ public class C01Static {
         System.out.println("C01MyClass.location = " + C01MyClass.location); // ok
         System.out.println("o1.location = " + o1.location); // x
         System.out.println("o2.location = " + o2.location); // x)
+
+        // static 메소드는 클래스로 접근해서 실행시키는 것을 권장
+//        o1.method2();
+        C01MyClass.method2();
     }
 }
 
@@ -29,5 +33,9 @@ class C01MyClass {
 
     // 인스턴스 메소드
     void method1() {
+    }
+
+    // static 메소드 (class 메소드)
+    static void method2() {
     }
 }
