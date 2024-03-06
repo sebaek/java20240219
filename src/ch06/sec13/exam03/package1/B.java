@@ -11,6 +11,6 @@ public class B {
 
         a.method1(); // public
         a.method2(); // package private
-        a.method3(); // private
+//        a.method3(); // private
     }
 }
