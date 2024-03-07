@@ -12,6 +12,10 @@ public class C03Polymorphism {
 
         C03Parent child022 = new C03Child2(); // ok
 
+        C03Parent p1 = new C03Parent();
+//        C03Child1 c1 = p1; // x
+//        C03Child2 c2 = p1; // x
+
     }
 }
 
