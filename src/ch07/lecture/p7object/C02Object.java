@@ -3,7 +3,7 @@ package ch07.lecture.p7object;
 import java.math.BigDecimal;
 import java.util.Scanner;
 
-public class C01Object {
+public class C02Object {
     public static void main(String[] args) {
         int[] arr1 = new int[3];
         String s1 = "java";
