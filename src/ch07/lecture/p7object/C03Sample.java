@@ -17,11 +17,58 @@ public class C03Sample {
     }
 }
 
-// @formatter:off
 abstract class Shape {
     public abstract void printArea();
 }
 
-class Round extends Shape { }
+class Round extends Shape {
+    private final double radius;
 
-class Rectangle extends Shape { }
+    public Round(double radius) {
+        this.radius = radius;
+    }
+
+    @Override
+    public void printArea() {
+        double area = getArea();
+        System.out.println(area);
+    }
+
+    @Override
+    public String toString() {
+        double area = getArea();
+        return STR."반지름이 \{radius}인 원의 면적은 \{area} 입니다.";
+    }
+
+    private double getArea() {
+        double area = radius * radius * Math.PI;
+        return area;
+    }
+}
+
+class Rectangle extends Shape {
+    private final double width;
+    private final double height;
+
+    public Rectangle(double width, double height) {
+        this.width = width;
+        this.height = height;
+    }
+
+    @Override
+    public void printArea() {
+        double area = getArea();
+        System.out.println(area);
+    }
+
+    @Override
+    public String toString() {
+        double area = getArea();
+        return STR."가로 \{width}, 세로 \{height}인 사각형의 넓이는 \{area} 입니다.";
+    }
+
+    private double getArea() {
+        double area = width * height;
+        return area;
+    }
+}
