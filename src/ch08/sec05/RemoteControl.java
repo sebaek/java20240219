@@ -20,4 +20,8 @@ public interface RemoteControl {
         }
     }
 
+    // 358쪽 코드 추가
+    static void changeBattery() {
+        System.out.println("리모콘 건전지를 교체합니다.");
+    }
 }

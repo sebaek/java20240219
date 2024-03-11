@@ -19,5 +19,8 @@ public class RemoteControlExample {
 
         rc.setMute(true);
         rc.setMute(false);
+
+        // 359쪽 코드 추가
+        RemoteControl.changeBattery();
     }
 }
