@@ -12,7 +12,9 @@ public class C02InstanceNestedClass {
 class C02MyClass {
     // 인스턴스 중첩 클래스 (nested class)
     class C02NestedClass {
-
+        //필드
+        //생성자
+        // 메소드
     }
 
     // 필드
