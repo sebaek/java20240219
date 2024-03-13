@@ -3,7 +3,7 @@ package ch16.lecture.p1lambda;
 // 메소드 참조
 //   1. static method 참조
 //   2. instance method 참조
-//   3. 임의 객체의 인스턴스 메소드 참
+//   3. 임의 객체의 인스턴스 메소드 참조
 
 // 4. 생성자 참조
 
