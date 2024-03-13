@@ -33,6 +33,7 @@ interface C03Myinterface4 {
 interface C03MyInterface5 {
     void method1();
 
+    // Object 클래스의 public 메소드는 포함하지 않음
     String toString();
 
     int hashCode();
