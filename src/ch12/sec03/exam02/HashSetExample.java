@@ -1,4 +1,4 @@
-package ch12.ch12.sec03.exam02;
+package ch12.sec03.exam02;
 
 import ch12.sec03.exam02.Student;
 
