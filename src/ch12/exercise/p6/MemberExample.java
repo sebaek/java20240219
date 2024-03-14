@@ -1,4 +1,4 @@
-package ch12.lecture.p6;
+package ch12.exercise.p6;
 
 public class MemberExample {
     public static void main(String[] args) {

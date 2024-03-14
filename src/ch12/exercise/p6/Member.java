@@ -1,4 +1,4 @@
-package ch12.lecture.p6;
+package ch12.exercise.p6;
 
 public class Member {
     private String id;
