@@ -39,6 +39,6 @@ public class C01Set {
         System.out.println("b6 = " + b6);
         System.out.println("b7 = " + b7);
 
-        
+
     }
 }
