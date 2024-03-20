@@ -2,6 +2,7 @@ package ch15.lecture.p5map;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 public class C01Map {
     public static void main(String[] args) {
@@ -65,6 +66,29 @@ public class C01Map {
 
 
         // 전체탐색
+        // 1. keySet
+        System.out.println("####keySet && 향상된 for 활용");
+        Set<String> keys = map.keySet();
+        // forEach
+        // enhanced for
+        for (String key : keys) {
+            System.out.println(key + ":" + map.get(key));
+        }
+
+        // 2. entrySet
+        System.out.println("### entrySet && 향상된 for 활용");
+        Set<Map.Entry<String, String>> entries = map.entrySet();
+        // forEach
+        // enhanced for
+        for (Map.Entry<String, String> entry : entries) {
+            System.out.println(entry.getKey() + ":" + entry.getValue());
+        }
+
+
+        // 3. forEach
+        System.out.println("### forEach 메소드 활용");
+        map.forEach((k, v) -> System.out.println(k + ":" + v));
+
 
     }
 }
