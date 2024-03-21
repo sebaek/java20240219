@@ -8,7 +8,7 @@ public class C02LeetCode1748 {
 
 class Solution {
     public int sumOfUnique(int[] nums) {
-        Map<Integer, Integer> map = new HashMap();
+        Map<Integer, Integer> map = new HashMap<>();
         for (int num : nums) {
             Integer value = map.get(num);
             if (value == null) {
