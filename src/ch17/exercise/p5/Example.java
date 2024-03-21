@@ -14,6 +14,16 @@ public class Example {
                 .filter(s -> s.matches(".*[jJ][aA][vV][aA].*"))
                 .forEach(System.out::println);
 
-        
+        System.out.println();
+        list.stream()
+                .filter(s -> s.toLowerCase().contains("java"))
+                .forEach(System.out::println);
+
+        System.out.println();
+        list.stream()
+                .filter(s -> s.toUpperCase().contains("JAVA"))
+                .forEach(System.out::println);
+
+
     }
 }
