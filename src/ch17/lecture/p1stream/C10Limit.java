@@ -39,6 +39,27 @@ public class C10Limit {
                 .limit(3)
                 .forEach(System.out::println);
 
+        // skip : 정해진 갯수만큼의 요소 건너뛰기
+        System.out.println(list);
+        list.stream()
+                .skip(3)
+                .forEach(System.out::println);
+
+        System.out.println();
+        list.stream()
+                .sorted()
+                .distinct()
+                .limit(2)
+                .skip(1)
+                .forEach(System.out::println);
+
+        list.stream()
+                .sorted(Comparator.reverseOrder())
+                .distinct()
+                .skip(2)
+                .limit(1)
+                .forEach(System.out::println);
+
 
     }
 }
