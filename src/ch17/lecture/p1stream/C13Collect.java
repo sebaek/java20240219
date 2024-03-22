@@ -2,6 +2,7 @@ package ch17.lecture.p1stream;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class C13Collect {
     public static void main(String[] args) {
@@ -21,5 +22,11 @@ public class C13Collect {
                         (a, b) -> a.addAll(b));
 
         System.out.println("result2 = " + result2);
+
+        List<Integer> result3 = list.stream()
+                .map(String::length)
+                .collect(Collectors.toList());
+        System.out.println("result3 = " + result3);
+        
     }
 }

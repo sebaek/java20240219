@@ -2,6 +2,7 @@ package ch17.exercise.p7;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Example {
     public static void main(String[] args) {
@@ -11,10 +12,7 @@ public class Example {
 
         List<Member> developers = list.stream()
                 .filter(m -> m.getJob().equals("개발자"))
-                .collect(() -> new ArrayList<>()
-                        , (c, e) -> c.add(e)
-                        , (a, b) -> {
-                        });
+                .collect(Collectors.toList());
 
         developers.stream()
                 .forEach(d -> System.out.println(d.getName()));
