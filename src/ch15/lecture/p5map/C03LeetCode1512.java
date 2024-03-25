@@ -1,6 +1,7 @@
 package ch15.lecture.p5map;
 
 import java.util.*;
+import java.util.function.Predicate;
 
 public class C03LeetCode1512 {
 }
