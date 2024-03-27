@@ -13,10 +13,12 @@ public class C01Reader {
         int read1 = reader.read(); // 걱
         int read2 = reader.read(); // 한
         int read3 = reader.read(); // z
+        int read4 = reader.read(); // -1
 
         System.out.println("read1 = " + read1);
         System.out.println("read2 = " + read2);
         System.out.println("read3 = " + read3);
+        System.out.println("read4 = " + read4);
 
         System.out.println("read1 = " + (char) read1);
         System.out.println("read2 = " + (char) read2);
