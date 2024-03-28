@@ -7,7 +7,7 @@ import java.io.OutputStream;
 
 public class C04BufferedOutputStream {
     public static void main(String[] args) throws IOException {
-        String fileName = "temp/bigfile/output2.data";
+        String fileName = "d:/output2.data";
         OutputStream os = new FileOutputStream(fileName);
         BufferedOutputStream bos = new BufferedOutputStream(os);
 
