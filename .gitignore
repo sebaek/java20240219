@@ -30,3 +30,4 @@ bin/
 
 .idea
 /src/test/
+/temp/bigfile/
