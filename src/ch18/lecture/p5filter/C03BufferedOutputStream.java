@@ -6,13 +6,13 @@ import java.io.OutputStream;
 
 public class C03BufferedOutputStream {
     public static void main(String[] args) throws IOException {
-        String file1 = "d:/output1.data";
+        String file1 = "temp/bigfile/output1.data";
         OutputStream os = new FileOutputStream(file1);
 
-        byte[] data = new byte[1024];
+        byte[] data = new byte[10];
 
         long start = System.currentTimeMillis();
-        for (int i = 0; i < (1024 * 1024); i++) {
+        for (int i = 0; i < (1024 * 1024 * 100); i++) {
             os.write(data);
         }
         os.flush();
