@@ -24,7 +24,7 @@ public class C04Computer1 {
                     // 파일은 아무거나
                     // FileInputStream 만들기
                     // BufferedInputStream 연결
-                    String[] files = {"butterfly", "coffee", "dolphin", "eagle", "lion", "namsan", "roses", "tiger", "tulip"};
+                    String[] files = {"cat", "butterfly", "coffee", "dolphin", "eagle", "lion", "namsan", "roses", "tiger", "tulip"};
                     Random random = new Random();
 
                     FileInputStream fis = new FileInputStream("temp/images/" + files[random.nextInt(files.length)] + ".png");
