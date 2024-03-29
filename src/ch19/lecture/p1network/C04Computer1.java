@@ -5,6 +5,7 @@ import java.io.BufferedOutputStream;
 import java.io.FileInputStream;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.Random;
 
 public class C04Computer1 {
     public static void main(String[] args) throws Exception {
@@ -23,7 +24,10 @@ public class C04Computer1 {
                     // 파일은 아무거나
                     // FileInputStream 만들기
                     // BufferedInputStream 연결
-                    FileInputStream fis = new FileInputStream("temp/cat.png");
+                    String[] files = {"butterfly", "coffee", "dolphin", "eagle", "lion", "namsan", "roses", "tiger", "tulip"};
+                    Random random = new Random();
+
+                    FileInputStream fis = new FileInputStream("temp/images/" + files[random.nextInt(files.length)] + ".png");
                     BufferedInputStream bis = new BufferedInputStream(fis);
 
                     try (bos; fis; bis) {
@@ -38,13 +42,15 @@ public class C04Computer1 {
 
                         bos.flush();
                     } catch (Exception e) {
-                        System.err.println("오류:" + socket.getRemoteSocketAddress());
+                        e.printStackTrace();
+                        System.err.println("오류1:" + socket.getRemoteSocketAddress());
                     }
                     // 마지막에 flush()
 
                     System.out.println("완료:" + socket.getRemoteSocketAddress());
                 } catch (Exception e) {
-                    System.err.println("오류:" + socket.getRemoteSocketAddress());
+                    e.printStackTrace();
+                    System.err.println("오류2:" + socket.getRemoteSocketAddress());
                 }
             });
             t.start();
