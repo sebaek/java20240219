@@ -1,0 +1,151 @@
+### CLI 명령어 배우기
+
+pwd
+현재 작업 디렉토리 출력
+
+mkdir
+새 디렉토리 만들기
+
+rmdir
+디렉토리 지우기
+(디렉토리가 비었을 때만)
+
+ctrl + l
+화면 지우기
+
+cd
+디렉토리 변경
+
+cd ..
+상위 디렉토리로 이동
+
+cd -
+직전 작업 디렉토리로 이동
+
+touch
+새 파일만들기
+
+ls
+현재 디렉토리의 파일목록 보기
+
+ls -l
+자세히 보기
+
+ls -a
+숨겨진 파일도 보기
+
+ls -al
+숨겨진 파일까지 자세히 보기
+
+echo
+출력하기
+
+>
+왼쪽 출력을 오른쪽으로 보내기
+
+>>
+왼쪽 출력을 오른쪽에 추가
+
+cat
+파일 내용 보기
+
+git init
+현재 폴더를 git이 버전관리 하는
+폴더로 만듦
+
+git add
+커밋 후보로 올림
+(stage, index)
+
+git add -A
+모든 변경파일 stage
+
+git add .
+현재 폴더내의 모든 변경 파일 stage
+
+git status
+현재 디렉토리의 상태보기
+
+git commit
+현재 파일들의 (변경)정보(snapshot)를 저장
+*같이 저장되는 정보
+날짜시간
+커밋한 사람
+커밋메세지
+부모커밋ID
+
+git commit -m
+커밋 메시지와 함께 커밋
+
+git commit -a
+stage와 커밋 한번에
+
+git commit -am
+커밋 메시지와 stage,커밋 한번에
+
+git log
+커밋 히스토리 보기
+
+git log --all
+모든 히스토리 보기
+
+git log --oneline
+로그를 한 줄로 보기
+
+git log --graph
+그래프로 보기
+
+git checkout
+다른 커밋으로 이동
+
+git checkout -b
+브랜치 생성 후 이동
+
+git switch
+브랜치 이동
+
+git switch -c
+브랜치 생성 후 이동
+
+HEAD : 현재위치
+
+branch :
+특정 커밋의 별칭
+branch에서 커밋하면
+최신 커밋을 가리킴
+
+git branch
+브랜치 목록 보기
+
+git branch -v
+자세히 보기
+
+git branch 별칭 커밋ID
+특정 커밋에 별칭 붙이기
+
+git branch 별칭
+현재 커밋에 브랜치 생성
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
