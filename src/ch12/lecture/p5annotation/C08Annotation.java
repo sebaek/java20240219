@@ -8,4 +8,10 @@ public class C08Annotation {
     @MyAnnotation8(9)
     private String value3;
 }
+
 // MyAnnotation8 작성
+@interface MyAnnotation8 {
+    int value() default 0;
+
+    String name() default "";
+}
