@@ -9,3 +9,8 @@ public class C06Annotation {
 }
 
 // MyAnnotation6 작성
+@interface MyAnnotation6 {
+    String value();
+
+    int[] data();
+}
