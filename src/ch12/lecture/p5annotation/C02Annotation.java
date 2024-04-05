@@ -13,4 +13,5 @@ public class C02Annotation {
 }
 
 // MyAnnotation2 만들기
-
+@interface MyAnnotation2 {
+}
